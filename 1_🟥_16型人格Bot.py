@@ -10,7 +10,7 @@ load_dotenv("./en1106.env")
 
 os.environ["OPENAI_API_TYPE"] = os.environ["Azure_OPENAI_API_TYPE1"]
 os.environ["OPENAI_API_BASE"] = os.environ["Azure_OPENAI_API_BASE1"]
-os.environ["OPENAI_API_KEY"] =  os.environ["Azure_OPENAI_API_KEY1"]
+os.environ["OPENAI_API_KEY"] =  st.secrets["key"]
 os.environ["OPENAI_API_VERSION"] = os.environ["Azure_OPENAI_API_VERSION1"]
 BASE_URL=os.environ["OPENAI_API_BASE"]
 API_KEY=os.environ["OPENAI_API_KEY"]
